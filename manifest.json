@@ -1,0 +1,36 @@
+
+{
+  "manifest_version": 3,
+  "name": "Focus",
+  "version": "1.0",
+  "description": "A little help to stay focused on your dreams",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["jquery.min.js", "main.js"],
+      "css": ["style.css"]
+    }
+  ],
+
+  "permissions": [],
+
+  "action": {
+    "default_title": "Focus on Your Dreams",
+    "default_icon": {
+      "16": "asset/16.png",
+      "48": "asset/48.png"
+    }
+  },
+
+  "host_permissions": [
+    "https://picsum.photos/*"
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["asset/houses.jpg"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}
