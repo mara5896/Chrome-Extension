@@ -16,11 +16,7 @@
   "permissions": [],
 
   "action": {
-    "default_title": "Focus on Your Dreams",
-    "default_icon": {
-      "16": "asset/16.png",
-      "48": "asset/48.png"
-    }
+    "default_title": "Focus on Your Dreams"
   },
 
   "host_permissions": [
